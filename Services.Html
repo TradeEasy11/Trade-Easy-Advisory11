@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Trade Easy Advisory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .nav {
+      font-family: sans-serif;
+    }
+
+    .nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #add8e6; /* Light Blue */
+    }
+
+    .marquee {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .service-list {
+      margin-top: 20px;
+    }
+
+    .service-item {
+      margin: 12px 0;
+      padding-left: 25px;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .service-item::before {
+      content: '★';
+      color: orange;
+      position: absolute;
+      left: 0;
+    }
+
+    .market-buttons {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .market-buttons button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .market-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* FEATURE SECTION */
+    .features {
+      background-color: white;
+      max-width: 1000px;
+      margin: 0 auto 30px auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .features p {
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .feature-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature {
+      flex: 1 1 200px;
+      max-width: 220px;
+    }
+
+    .feature img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .feature h3 {
+      color: #007bff;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    .feature p {
+      color: #444;
+      font-size: 14px;
+    }
+    .service-detail-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-detail-container h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.service-box {
+  margin-bottom: 30px;
+  border-left: 6px solid #007bff;
+  padding: 20px 25px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+  margin: 0 0 10px;
+  color: #004080;
+  font-size: 20px;
+}
+
+.service-box p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">
+      
+  <img src="https://i.imgur.com/kPX2XRx.png" alt="Logo" class="logo">
+      <h1>Trade Easy Advisory</h1>
+    </div>
+    <div class="nav">
+      <a href="Index.html">Home</a>
+      <a href="About Us.html">About</a>
+      <a href="Index.html">Packages</a>
+      <a href="Services.Html">Services</a>
+      <a href="Index.html">Contact</a>
+    </div>  
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">Trade Easy Advisory does not provide guarantees on the returns from research recommendations. Investing or trading in stocks is always subject to market risk. It’s important to note that past Performance does not guarantee Future Results. 📈</marquee>
+  </div>
+
+  <!-- SERVICES CONTAINER -->
+  <div class="container">
+    <h2>Services We Offer</h2>
+    <div class="service-list">
+      <div class="service-item">Get Daily Basis Banknifty and Intraday Calls</div>
+      <div class="service-item">Get Daily basis Short Term/Long Term Recommendation.</div>
+      <div class="service-item">Get Daily basis Resistance and Support level.</div>
+      <div class="service-item">Get Daily basis Recommendation via SMS Server.</div>
+      <div class="service-item">Get Intraday Recommendation in Option market in:</div>
+    </div>
+
+    <div class="market-buttons">
+      <button>NIFTY</button>
+      <button>BANKNIFTY</button>
+      <button>FINNIFTY</button>
+      <button>SENSEX</button>
+      <button>MIDCPNIFTY</button>
+      <button>STOCKS</button>
+    </div>
+  </div>
+
+  <!-- OUR FEATURE SECTION -->
+  <div class="features">
+    <h2>OUR FEATURE</h2>
+    <p>We give recommendation of the right stocks at the right time</p>
+    <div class="feature-boxes">
+      <div class="feature">
+        <img src="https://i.imgur.com/mrO9lSY.jpg" alt="Description of image">
+        <h3>Minimum Risk / Reward Ratio</h3>
+        <p>Providing quality research is our primary goal. That's why the risk/reward ratio we use to manage capital and risk of loss.</p>
+      </div>
+      <div class="feature">
+        <img src="https://i.imgur.com/k6YgqR9.jpg" alt="Description of image">
+        <h3>Extensive Research</h3>
+        <p>We focus on technical (chart pattern) and fundamental (news, quarterly result) research.</p>
+      </div>
+      <div class="feature">
+        <img src="https://i.imgur.com/kz26Gtt.jpg" alt="Description of image">
+        <h3>Personalized Customer Support</h3>
+        <p>Get direct discussion with our analyst team for outstanding result. Get research-based stock prediction with guidance.</p>
+      </div>
+      <div class="feature">
+        <img src="https://i.imgur.com/GOjv4Kq.jpg" alt="Description of image">
+        <h3>Grow Your Profit</h3>
+        <p>Get reliable stock market trading tips with our research and get telephonic & SMS support in India.</p>
+      </div>
+    </div>
+  </div>
+  <!-- SERVICES DETAILS CONTAINER -->
+<div class="service-detail-container">
+  <h2>Detailed Overview of Our Services</h2>
+
+  <div id="intraday" class="service-box">
+    <h3>Intraday Calls</h3>
+    <p>We provide real-time Intraday trading recommendations with accurate entry and exit levels to help you make the most of day-trading opportunities in the market.</p>
+  </div>
+
+  <div id="banknifty" class="service-box">
+    <h3>Bank Nifty Tips</h3>
+    <p>Expert insights and timely tips tailored specifically for Bank Nifty. Take advantage of the high volatility with precision-driven strategies and levels.</p>
+  </div>
+
+  <div id="shortlong" class="service-box">
+    <h3>Short/Long Term Picks</h3>
+    <p>Our analysts provide well-researched stock recommendations for short and long-term horizons, helping investors grow a sustainable and profitable portfolio.</p>
+  </div>
+
+  <div id="sms" class="service-box">
+    <h3>SMS Alerts</h3>
+    <p>Stay updated on all trade signals via instant SMS alerts. Get timely entry, exit, and stop-loss information, even when you're on the go.</p>
+  </div>
+
+  <div id="supportlevels" class="service-box">
+    <h3>Support & Resistance Levels</h3>
+    <p>Access to technical support and resistance levels for NIFTY, BANKNIFTY, FINNIFTY, and individual stocks, updated daily to guide your trades with precision.</p>
+  </div>
+</div>
+
+  
+<!-- FOOTER -->
+<footer style="background-color: #29a8ff; color: white; font-family: 'Playfair Display', serif; padding-top: 30px;">
+  <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; background-color: #001f3f; padding: 30px; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); text-align: left;">
+
+    <!-- Brand & Social -->
+    <div style="flex: 1; min-width: 220px; margin-bottom: 20px;">
+      <h2 style="margin-top: 0;">Trade Easy Advisory</h2>
+      <div style="margin-top: 15px;">
+        <a href="#" style="margin-right: 15px; color: white; text-decoration: none; font-size: 18px;"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" style="margin-right: 15px; color: white; text-decoration: none; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="margin-right: 15px; color: white; text-decoration: none; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; text-decoration: none; font-size: 18px;"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Our Services -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">Our Services</h3>
+      <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+        <li><a href="Services.Html#intraday" style="color: white; text-decoration: none;">Intraday Calls</a></li>
+        <li><a href="Services.Html#Banknifty" style="color: white; text-decoration: none;">Bank Nifty Tips</a></li>
+        <li><a href="Services.Html#shortlong" style="color: white; text-decoration: none;">Short/Long Term Picks</a></li>
+        <li><a href="Services.Html#sms" style="color: white; text-decoration: none;">SMS Alerts</a></li>
+        <li><a href="Services.html#supportlevels" style="color: white; text-decoration: none;">Support & Resistance</a></li>
+      </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">Useful Links</h3>
+      <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+        <li><a href="Index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="About Us.html" style="color: white; text-decoration: none;">About Us</a></li>
+        <li><a href="Index.html#packages" style="color: white; text-decoration: none;">Our Packages</a></li>
+        <li><a href="Index.html#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        <li><a href="About Us.html#Refund" style="color: white; text-decoration: none;">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+      <h3 style="margin-top: 0;">Contact Us</h3>
+      <p><strong>Address:</strong> Mahape, Navi-Mumbai, Maharashtra</p>
+      <p><strong>Phone:</strong> +91 993 0193 6408</p>
+      <p><strong>Email:</strong> trade.easyadvisory11@gmail.com</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; padding: 10px; font-size: 14px; color: #333;">
+    © Copyright <strong>Trade Easy</strong> All Rights Reserved
+  </div>
+</footer>
+
+  
+</body>
+</html>
